@@ -8,6 +8,9 @@ import { TasksTaskModule } from './task/task.module';
         TasksTaskModule,
         /* jhipster-needle-add-entity-module - JHipster will add entity modules here */
     ],
+    exports: [
+        TasksTaskModule
+    ],
     declarations: [],
     entryComponents: [],
     providers: [],

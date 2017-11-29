@@ -5,4 +5,7 @@ export * from './task-dialog.component';
 export * from './task-delete-dialog.component';
 export * from './task-detail.component';
 export * from './task.component';
+export * from './task-add/task-add.component';
+export * from './tasks-list/tasks-list.component';
+export * from './tasks.component';
 export * from './task.route';

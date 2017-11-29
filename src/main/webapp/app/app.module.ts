@@ -2,6 +2,7 @@ import './vendor.ts';
 
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { Ng2Webstorage } from 'ng2-webstorage';
 
 import { TasksSharedModule, UserRouteAccessService } from './shared';
@@ -29,6 +30,7 @@ import {
     imports: [
         BrowserModule,
         LayoutRoutingModule,
+        FormsModule,
         Ng2Webstorage.forRoot({ prefix: 'jhi', separator: '-'}),
         TasksSharedModule,
         TasksHomeModule,

@@ -14,6 +14,9 @@ import {
     taskRoute,
     taskPopupRoute,
 } from './';
+import { TasksComponent } from './tasks.component';
+import { TasksListComponent } from './tasks-list/tasks-list.component';
+import { TaskAddComponent } from './task-add/task-add.component';
 
 const ENTITY_STATES = [
     ...taskRoute,
@@ -25,13 +28,19 @@ const ENTITY_STATES = [
         TasksSharedModule,
         RouterModule.forRoot(ENTITY_STATES, { useHash: true })
     ],
+    exports: [
+        TasksComponent
+    ],
     declarations: [
+        TasksComponent,
         TaskComponent,
         TaskDetailComponent,
         TaskDialogComponent,
         TaskDeleteDialogComponent,
         TaskPopupComponent,
         TaskDeletePopupComponent,
+        TaskAddComponent,
+        TasksListComponent
     ],
     entryComponents: [
         TaskComponent,
