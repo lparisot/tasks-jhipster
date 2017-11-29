@@ -55,7 +55,11 @@ export class TasksListComponent implements OnInit, OnDestroy {
     }
 
     getDueDateLabel(task: Task) {
-        return task.completed ? 'label-success' : 'label-primary';
+        return task.completed ? 'alert-success' : 'alert-danger';
+    }
+
+    getDueDateText(task: Task) {
+        return task.dueDate.getDate() + '/' + (task.dueDate.getMonth() + 1) + '/' + task.dueDate.getFullYear();
     }
 
     onTaskChange(event, task) {
